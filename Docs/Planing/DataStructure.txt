@@ -1,15 +1,65 @@
 Battle Camp
-	-Players (List<Player>)
-	
+    -Players (List<Player>)
+    -Player'sTurn (int)
+    
 Player
-	-Decks (List<deck>)
-	-Current Deck (deck)
-	-Grimoire (List<cards>)
-	-Banned (List<cards>)
-	-Graveyard (List<cards>)
-	-Hand (List<cards>)
-	-Territories (List<cards>)
-	-Camp (List<cards>)
-	-HP (int)
-	-Mana to use (int)
-	-Total mana (int)
+    -Decks (List<Deck>)
+    -Current Deck (Deck)
+    -Grimoire (List<Card>)
+    -Banned (List<Card>)
+    -Graveyard (List<Card>)
+    -Hand (List<Card>)
+    -Camp (List<Card>)
+    -Territories (List<Terrain>)
+    -HasPlayedTerrain (bool)
+    -Name (string)
+    -id (int)
+    -HP (int)
+    -Mana to use (List<Mana>)
+
+Deck
+    -Cards (List<Card>)
+    -Name (string)
+    -Image (string)
+
+Card Interface
+    -CardColor (CardColor)
+    -Name (string)
+    -Type (CardType)
+    -Rarity (CardRarity)
+    -Image (string)
+
+Terrain
+    -GivenMana (Mana)
+
+Creature
+    -Cost (List<Mana>)
+    -Stat (Stats)
+    -Descripion (string)
+    -Species (List<CreatureSpecies>)
+    -Actions (List<Action>)
+
+Mana
+    -Type (ManaType)
+
+Action
+    -Conditions (List<ActionType>)
+    -Efects (List<Modifier>)
+
+Stats
+    -Power (int)
+    -HP (int)
+    -Modifiers (List<Modifier>)
+
+Modifier
+    -PowerChanger (int)
+    -HPChanger (int)
+    -SpecialEfects (List<EspecialEfect>)
+
+Enums
+    -CardColor
+    -CardType
+    -CardRarity
+    -CreatureSpecies
+    -ManaType
+    -EspecialEfect
