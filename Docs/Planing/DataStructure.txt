@@ -1,7 +1,3 @@
-Battle Camp
-    -Players (List<Player>)
-    -Player'sTurn (int)
-    
 Player
     -Decks (List<Deck>)
     -Current Deck (Deck)
@@ -46,7 +42,7 @@ Mana
 
 Action
     -Conditions (List<ActionType>)
-    -Efects (List<Modifier>)
+    -Effects (List<Modifier>)
 
 Stats
     -Power (int)
@@ -65,3 +61,8 @@ Enums
     -CreatureSpecies
     -ManaType
     -EspecialEfect
+    -ActionType
+    
+Battle Camp
+    -Players (List<Player>)
+    -Player'sTurn (int)
