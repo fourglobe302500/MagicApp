@@ -1,0 +1,15 @@
+Battle Camp
+	-Players (List<Player>)
+	
+Player
+	-Decks (List<deck>)
+	-Current Deck (deck)
+	-Grimoire (List<cards>)
+	-Banned (List<cards>)
+	-Graveyard (List<cards>)
+	-Hand (List<cards>)
+	-Territories (List<cards>)
+	-Camp (List<cards>)
+	-HP (int)
+	-Mana to use (int)
+	-Total mana (int)
