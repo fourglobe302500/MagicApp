@@ -14,6 +14,7 @@ Player
     -HasPlayedTerrain (bool)
     -Name (string)
     -NickName (string)
+    -PassWord (EncodedString)
     -id (int)
     -HP (int)
     -Mana to use (List<Mana>)
