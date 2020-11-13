@@ -13,6 +13,7 @@ Player
     -Territories (List<Terrain>)
     -HasPlayedTerrain (bool)
     -Name (string)
+    -NickName (string)
     -id (int)
     -HP (int)
     -Mana to use (List<Mana>)
