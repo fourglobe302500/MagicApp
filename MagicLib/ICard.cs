@@ -1,10 +1,15 @@
-﻿namespace MagicLib
+﻿using System.Collections.Generic;
+
+namespace MagicLib
 {
+    /// <summary>
+    /// Represents an Card Interface
+    /// </summary>
     public interface ICard
     {
-        CardColor CardColor { get; }
+        List<CardColor> CardColors { get; }
         string Name { get; }
-        CardType Type { get; }
+        List<CardType> Types { get; }
         CardRarity Rarity { get; }
         string Image { get; }
     }

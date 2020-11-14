@@ -1,12 +1,40 @@
-﻿namespace MagicLib
+﻿using System.Collections.Generic;
+
+namespace MagicLib
 {
+    /// <summary>
+    /// REpresents an Terrain Card
+    /// </summary>
     public class Terrain : ICard
     {
-        public CardColor CardColor => throw new System.NotImplementedException();
+        /// <summary>
+        /// Represents the terrain's Colors
+        /// </summary>
+        public List<CardColor> CardColors => throw new System.NotImplementedException();
+
+        /// <summary>
+        /// Represents the terrain's Name
+        /// </summary>
         public string Name => throw new System.NotImplementedException();
-        public CardType Type => throw new System.NotImplementedException();
+        
+        /// <summary>
+        /// Represents the terrain's Types
+        /// </summary>
+        public List<CardType> Types => throw new System.NotImplementedException();
+
+        /// <summary>
+        /// Represents the terrain's Rarity
+        /// </summary>
         public CardRarity Rarity => throw new System.NotImplementedException();
+
+        /// <summary>
+        /// Represents the terrain's Image location
+        /// </summary>
         public string Image => throw new System.NotImplementedException();
-        public Mana GivenMana { get; set; }
+
+        /// <summary>
+        /// Represents the Mana this terrain will give wenn tapped
+        /// </summary>
+        public List<Mana> GivenMana { get; set; }
     }
 }
